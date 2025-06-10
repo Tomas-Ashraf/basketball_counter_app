@@ -2,19 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class PointsCounter extends StatefulWidget {
+class PointsCounter extends StatelessWidget {
   const PointsCounter({super.key});
-
-  @override
-  State<PointsCounter> createState() => _PointsCounterState();
-}
-
-class _PointsCounterState extends State<PointsCounter> {
-  int teamA = 0;
-  double? myFontSizeA = 130.0;
-
-  int teamB = 0;
-  double? myFontSizeB = 130.0;
 
   @override
   Widget build(BuildContext context) {
@@ -57,9 +46,9 @@ class _PointsCounterState extends State<PointsCounter> {
                         child: SizedBox(
                           height: 140,
                           child: Text(
-                            '$teamA',
+                            '0',
                             style: TextStyle(
-                              fontSize: myFontSizeA,
+                              fontSize: 110.0,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -70,16 +59,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           minimumSize: const Size(120, 40),
                           backgroundColor: Colors.orange,
                         ),
-                        onPressed: () {
-                          teamA++;
-                          if (teamA >= 10 && teamA <= 99) {
-                            myFontSizeA = 90;
-                          }
-                          if (teamA >= 100 && teamA <= 1000) {
-                            myFontSizeA = 70;
-                          }
-                          setState(() {});
-                        },
+                        onPressed: () {},
                         child: const Text(
                           'Add 1 Point',
                           style: TextStyle(
@@ -94,16 +74,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           minimumSize: const Size(120, 40),
                           backgroundColor: Colors.orange,
                         ),
-                        onPressed: () {
-                          teamA += 2;
-                          if (teamA >= 10 && teamA <= 99) {
-                            myFontSizeA = 90;
-                          }
-                          if (teamA >= 100 && teamA <= 1000) {
-                            myFontSizeA = 70;
-                          }
-                          setState(() {});
-                        },
+                        onPressed: () {},
                         child: const Text(
                           'Add 2 Points',
                           style: TextStyle(
@@ -118,16 +89,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           minimumSize: const Size(120, 40),
                           backgroundColor: Colors.orange,
                         ),
-                        onPressed: () {
-                          teamA += 3;
-                          if (teamA >= 10 && teamA <= 99) {
-                            myFontSizeA = 90;
-                          }
-                          if (teamA >= 100 && teamA <= 1000) {
-                            myFontSizeA = 70;
-                          }
-                          setState(() {});
-                        },
+                        onPressed: () {},
                         child: const Text(
                           'Add 3 Points',
                           style: TextStyle(
@@ -168,9 +130,9 @@ class _PointsCounterState extends State<PointsCounter> {
                         child: SizedBox(
                           height: 140,
                           child: Text(
-                            '$teamB',
+                            '0',
                             style: TextStyle(
-                              fontSize: myFontSizeB,
+                              fontSize: 110.0,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -181,16 +143,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           minimumSize: const Size(120, 40),
                           backgroundColor: Colors.orange,
                         ),
-                        onPressed: () {
-                          teamB++;
-                          if (teamB >= 10 && teamB <= 99) {
-                            myFontSizeB = 90;
-                          }
-                          if (teamB >= 100 && teamB <= 1000) {
-                            myFontSizeB = 70;
-                          }
-                          setState(() {});
-                        },
+                        onPressed: () {},
                         child: const Text(
                           'Add 1 Point',
                           style: TextStyle(
@@ -205,16 +158,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           minimumSize: const Size(120, 40),
                           backgroundColor: Colors.orange,
                         ),
-                        onPressed: () {
-                          teamB += 2;
-                          if (teamB >= 10 && teamB <= 99) {
-                            myFontSizeB = 90;
-                          }
-                          if (teamB >= 100 && teamB <= 1000) {
-                            myFontSizeB = 70;
-                          }
-                          setState(() {});
-                        },
+                        onPressed: () {},
                         child: const Text(
                           'Add 2 Points',
                           style: TextStyle(
@@ -229,16 +173,7 @@ class _PointsCounterState extends State<PointsCounter> {
                           minimumSize: const Size(120, 40),
                           backgroundColor: Colors.orange,
                         ),
-                        onPressed: () {
-                          teamB += 3;
-                          if (teamB >= 10 && teamB <= 99) {
-                            myFontSizeB = 90;
-                          }
-                          if (teamB >= 100 && teamB <= 1000) {
-                            myFontSizeB = 70;
-                          }
-                          setState(() {});
-                        },
+                        onPressed: () {},
                         child: const Text(
                           'Add 3 Points',
                           style: TextStyle(
@@ -259,16 +194,7 @@ class _PointsCounterState extends State<PointsCounter> {
                 minimumSize: const Size(120, 40),
                 backgroundColor: Colors.orange,
               ),
-              onPressed: () {
-                setState(() {
-                  teamA = 0;
-                  teamB = 0;
-
-                  myFontSizeA = 130;
-
-                  myFontSizeB = 130;
-                });
-              },
+              onPressed: () {},
               child: const Text(
                 'Reset',
                 style: TextStyle(
