@@ -10,11 +10,9 @@ class PointsCounter extends StatefulWidget {
 }
 
 class _PointsCounterState extends State<PointsCounter> {
-  int teamA = 0;
-  double? myFontSizeA = 130.0;
+  double? myFontSizeA = 110.0;
 
-  int teamB = 0;
-  double? myFontSizeB = 130.0;
+  double? myFontSizeB = 110.0;
 
   @override
   Widget build(BuildContext context) {
@@ -72,12 +70,7 @@ class _PointsCounterState extends State<PointsCounter> {
                         ),
                         onPressed: () {
                           teamA++;
-                          if (teamA >= 10 && teamA <= 99) {
-                            myFontSizeA = 90;
-                          }
-                          if (teamA >= 100 && teamA <= 1000) {
-                            myFontSizeA = 70;
-                          }
+
                           setState(() {});
                         },
                         child: const Text(
@@ -96,12 +89,7 @@ class _PointsCounterState extends State<PointsCounter> {
                         ),
                         onPressed: () {
                           teamA += 2;
-                          if (teamA >= 10 && teamA <= 99) {
-                            myFontSizeA = 90;
-                          }
-                          if (teamA >= 100 && teamA <= 1000) {
-                            myFontSizeA = 70;
-                          }
+
                           setState(() {});
                         },
                         child: const Text(
@@ -120,12 +108,7 @@ class _PointsCounterState extends State<PointsCounter> {
                         ),
                         onPressed: () {
                           teamA += 3;
-                          if (teamA >= 10 && teamA <= 99) {
-                            myFontSizeA = 90;
-                          }
-                          if (teamA >= 100 && teamA <= 1000) {
-                            myFontSizeA = 70;
-                          }
+
                           setState(() {});
                         },
                         child: const Text(
@@ -183,12 +166,7 @@ class _PointsCounterState extends State<PointsCounter> {
                         ),
                         onPressed: () {
                           teamB++;
-                          if (teamB >= 10 && teamB <= 99) {
-                            myFontSizeB = 90;
-                          }
-                          if (teamB >= 100 && teamB <= 1000) {
-                            myFontSizeB = 70;
-                          }
+
                           setState(() {});
                         },
                         child: const Text(
@@ -207,12 +185,7 @@ class _PointsCounterState extends State<PointsCounter> {
                         ),
                         onPressed: () {
                           teamB += 2;
-                          if (teamB >= 10 && teamB <= 99) {
-                            myFontSizeB = 90;
-                          }
-                          if (teamB >= 100 && teamB <= 1000) {
-                            myFontSizeB = 70;
-                          }
+
                           setState(() {});
                         },
                         child: const Text(
@@ -231,12 +204,7 @@ class _PointsCounterState extends State<PointsCounter> {
                         ),
                         onPressed: () {
                           teamB += 3;
-                          if (teamB >= 10 && teamB <= 99) {
-                            myFontSizeB = 90;
-                          }
-                          if (teamB >= 100 && teamB <= 1000) {
-                            myFontSizeB = 70;
-                          }
+
                           setState(() {});
                         },
                         child: const Text(
